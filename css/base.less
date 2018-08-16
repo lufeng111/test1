@@ -1,0 +1,48 @@
+// css reset 初始化
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-size: 14px;
+  color: #333;
+  font-family: 'Microsoft Yahei', 'Times New Roman', Times, serif;
+}
+ul,ol{
+  list-style: none;
+}
+a,a:hover{
+  text-decoration: none;
+  color: #333;
+}
+input{
+  border: none;
+  outline:none;
+  -webkit-appearance: none;
+
+}
+// css common 公共样式
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+// 清楚浮动
+.clearfix::before,
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+  line-height: 0;
+}
+.jd-sprite{
+  background-image: url(../images/jd-sprites.png);
+  background-size: 200px 200px;
+  // 压缩背景图片
+}
